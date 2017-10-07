@@ -24,8 +24,8 @@ public class PhrasesActivity extends AppCompatActivity {
         numWords.add(new word("Let’s go", "yoowutis"));
         numWords.add(new word("Come here", "әnni'nem"));
 
-
-        ArrayAdapter<word> adapter = new wordAdapter(this, numWords);
+        String color = "#16AFCA";
+        ArrayAdapter<word> adapter = new wordAdapter(this, numWords, color);
 
         ListView listView = (ListView) findViewById(R.id.list);
 

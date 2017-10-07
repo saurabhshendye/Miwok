@@ -11,17 +11,19 @@ public class word {
     private String mMiwokTranslation;
     private String mDefaultTranslation;
     private int imageResourceId;
-
+    private boolean isImage;
 
     public word(String miwok, String translated, int imageResourceId) {
         this.mMiwokTranslation = miwok;
         this.mDefaultTranslation = translated;
         this.imageResourceId = imageResourceId;
+        isImage = true;
     }
 
     public word(String miwok, String translated) {
         this.mMiwokTranslation = miwok;
         this.mDefaultTranslation = translated;
+        isImage = false;
     }
 
     public String getTranslation() {
@@ -35,4 +37,9 @@ public class word {
     public int getImageResourceId() {
         return imageResourceId;
     }
+
+    public boolean hasImage() {
+        return isImage;
+    }
+
 }

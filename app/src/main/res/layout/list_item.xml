@@ -38,6 +38,17 @@
             android:textColor="@android:color/white"
             android:textSize="18sp"
             tools:text="One"/>
+        
     </LinearLayout >
+
+    <ImageView
+        android:layout_alignParentRight="true"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginRight="16dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_play_arrow_white_24dp"/>
+
+
 
 </RelativeLayout>

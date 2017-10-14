@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.saurabh.miwok">
 
     <application
@@ -17,13 +18,35 @@
             </intent-filter>
         </activity>
         <activity android:name=".NumbersActivity"
-            android:label="Numbers"/>
+            android:label="Numbers"
+            android:parentActivityName=".MainActivity"
+            tools:targetApi="jelly_bean" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
         <activity android:name=".PhrasesActivity"
-            android:label="Phrases"/>
-        <activity android:name=".ColorsActivity"
-            android:label="Colors"/>
+            android:label="Phrases"
+            android:parentActivityName=".MainActivity"
+            tools:targetApi="jelly_bean" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        <activity
+            android:name=".ColorsActivity"
+            android:label="Colors"
+            android:parentActivityName=".MainActivity"
+            tools:targetApi="jelly_bean" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
         <activity android:name=".FamilyActivity"
-            android:label="Family"></activity>
+            android:label="Family"
+            android:parentActivityName=".MainActivity"
+            tools:targetApi="jelly_bean" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+
     </application>
 
 </manifest>
